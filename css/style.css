@@ -158,7 +158,7 @@ body{
 
 #mission .items > div img{
     margin-top: 1rem;
-    width: 80%;
+    width: 90%;
     height: 300px;
 }
 
@@ -187,7 +187,6 @@ body{
 
 #about-us .container{
     display: flex;
-    width: 90%;
     margin: auto;
 }
 
@@ -226,4 +225,93 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 1s ease;
 }
+
+
+#about-us  .container .about-right .items .item:hover{
+    background-color: var(--primary-color);
+}
+
+
+/* Section testmonials */
+
+#testimonials{
+    padding: 3rem 0;
+    background-color: rgba(0, 0, 0, 0.852);
+}
+
+#testimonials .container{
+    width: 80%;
+    margin: auto;
+}
+
+#testimonials .container .row{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+#testimonials .container .row .test{
+    padding: 2rem 3rem;
+    margin-right: 1rem;
+    background-color: #505050;
+    color: white;
+}
+
+.test-img {
+    width:80px ;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.test-img img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.test-img img:hover{
+    transform: scale(1.2);
+}
+
+#testimonials .container .row .test .test-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+/* section contact us */
+
+#contact-us .container{
+    width: 50%;
+    margin: auto;
+}
+
+#contact-us .container .middle-heading{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contact-us .container form{
+        display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+}
+#contact-us .container form input{
+    padding: 0.7rem 0.5rem;
+    outline: orange;
+}
+
+#contact-us .container form textarea{
+    height: 150px;
+}
+
+#contact-us .container form input[type="submit"]{
+    border: 0;
+}
+
+
