@@ -1,0 +1,124 @@
+:root{
+    --primary-color:#4CAF50;
+    --box-dark:#505050;
+    --box-light:#DCDCDC;
+}
+
+/* Reseting css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Utility Class */
+.container{
+    margin: auto;
+    width: 1400px;
+    padding: 2rem;
+}
+
+
+/* Navbar */
+
+#navbar .logo{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+#navbar ul li a{
+    color: white;
+    padding: 1rem;
+    margin-right: 0.5rem;
+}
+
+.current{
+    border-bottom: 2px solid;
+}
+
+
+/* header content */
+
+#header{
+    position: relative;
+    background: rgba(0, 0, 0, 0.653);
+    color: white;
+}
+#header::before{
+    content: '';
+    position: absolute;
+    background: url("../img/header.jpg") no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#header .main-heading{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+
+
+#header .header-content{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#header .header-content p{
+    margin-bottom: 1rem;
+}
+
+#header .header-content form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    gap: 1rem;
+}
+
+#header .header-content form input{
+    display: inline-block;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+}
+
+input[type="submit"]{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #4caf4fd5;
+}
