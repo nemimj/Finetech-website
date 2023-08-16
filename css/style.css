@@ -24,6 +24,17 @@ body{
     padding: 2rem;
 }
 
+.btn{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #4caf4fd5;
+
+}
 
 /* Navbar */
 
@@ -113,12 +124,8 @@ body{
 }
 
 input[type="submit"]{
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
+   
 }
 
 input[type="submit"]:hover{
-    background-color: #4caf4fd5;
 }
