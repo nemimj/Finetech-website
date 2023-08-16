@@ -36,6 +36,20 @@ body{
 
 }
 
+.item-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.middle-heading{
+    font-size: 2.3rem;
+}
+
+.bg-dark{
+    background-color: #333;
+    color: white;
+}
 /* Navbar */
 
 #navbar .logo{
@@ -123,9 +137,93 @@ body{
     outline: 0;
 }
 
-input[type="submit"]{
-   
+
+
+/* Section Mission */
+
+#mission{
+    padding: 2rem;
 }
 
-input[type="submit"]:hover{
+#mission .items{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+#mission .items > div{
+    flex: 2;
+}
+
+#mission .items > div img{
+    margin-top: 1rem;
+    width: 80%;
+    height: 300px;
+}
+
+#mission .items .item:nth-child(2),
+#mission .items .item:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+
+#mission .btn{
+    width: 150px;
+    text-align: center;
+    padding:0.5rem 0.25rem;
+    border-radius: 5px;
+}
+
+
+/* section about us */
+
+#about-us{
+    padding: 4rem;
+}
+
+#about-us .container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+#about-us   .about-left{
+    width: 40%;
+}
+
+.about-left h3{
+    font-size: 1.2rem;
+}
+
+.about-left p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+#about-us  .container .about-right{
+
+    width: 60%;
+}
+#about-us  .container .about-right .items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: auto;
+}
+
+#about-us  .container .about-right .items .item{
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    margin-bottom: 1rem;
+    background-color: var(--box-light);
+    padding: 2rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
