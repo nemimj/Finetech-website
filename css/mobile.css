@@ -60,3 +60,47 @@
 
 
 
+@media (max-width: 500px){
+    html{
+        font-size: 14px;
+    }
+
+    .container{
+        padding: 1rem;
+    }
+    #navbar ul{
+        flex-direction: column;
+    }
+    #navbar ul li {
+        margin-bottom: 1rem;
+    }
+    #navbar ul li a{
+        margin-right: 0;
+        padding: 0.5rem;
+    }
+
+    #header .header-content form{
+        width: 90%;
+    margin-bottom: 3rem;
+    }
+
+    #about-us .container .about-right .items{
+        flex-wrap: wrap;
+    }
+
+    #mission .items > div img{
+        height: 100%;
+    }
+
+    #mission .items .item:nth-child(2), #mission .items .item:nth-child(3){
+        text-align: left;
+    }
+
+    #about-us{
+        padding: 0;
+    }
+
+    #testimonials .container .row .test{
+        padding: 2rem 1rem;
+    }
+}
