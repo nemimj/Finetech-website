@@ -1,0 +1,62 @@
+/* navbar */
+#navbar{
+    flex-direction: column;
+}
+
+#header .header-content{
+    height: 100%;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+#header .main-heading{
+    font-size: 1.5rem;
+}
+
+
+/* Section Mission */
+#mission .items{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* About us */
+#about-us .container{
+    flex-direction: column;
+}
+
+#about-us .about-left,#about-us .container .about-right
+ {
+    width: 100%;
+}
+#about-us .container .about-right .items{
+          gap: 2rem;
+          margin-top: 2rem;
+}
+
+/* section testimonial */
+
+#testimonials .container{
+    width: 100%;
+}
+
+#testimonials .container .row{
+    height: 100%;
+    flex-direction: column;
+}
+
+#testimonials .container .row .test{
+    margin-right: 0;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Contact Us */
+#contact-us .container{
+    width: 100%;
+}
+
+
+

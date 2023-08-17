@@ -20,7 +20,7 @@ body{
 /* Utility Class */
 .container{
     margin: auto;
-    width: 1400px;
+    max-width: 1400px;
     padding: 2rem;
 }
 
@@ -315,3 +315,10 @@ body{
 }
 
 
+/* footer */
+#footer p{
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
