@@ -106,3 +106,35 @@
 }
 
 
+@media (max-width:903px) {
+    #timeline .container ul li > div {
+        width: 230px;
+    }
+    #timeline .container ul li:nth-child(even) div{
+        left: -251px;
+    }
+    #timeline .container ul li:nth-child(even) > div::before {
+        left: 230px;
+    }
+    }
+    
+    
+    @media (max-width:550px) {
+    
+    #timeline .container ul li > div{
+            width: calc(100vh - 130px);
+    }
+    #timeline .container ul li:nth-child(even) div{
+        left: 36px;
+    }
+    #timeline .container ul li {
+        margin-left: 1rem;
+    }
+    #timeline .container ul li:nth-child(even) > div::before {
+        border-width: 8px 16px 8px 0;
+        border-color: transparent orange transparent transparent;
+        left: -16px;
+    
+    }
+
+    }
