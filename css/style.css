@@ -16,6 +16,10 @@ body{
     line-height: 1.6;
 }
 
+a{
+    text-decoration: none;
+    
+}
 
 /* Utility Class */
 .container{
@@ -234,6 +238,100 @@ body{
 }
 
 
+/* Section Timeline */
+
+#timeline .container ul li {
+    padding-top: 1rem;
+    position: relative;
+    width: 5px;
+    background-color: black;
+    margin: auto;
+    list-style: none;
+}
+
+#timeline .container ul li::after{
+    position: relative;
+    content: '';
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8px;
+}
+
+#timeline .container ul li:nth-child(even) div{
+    left: -434px;
+}
+
+
+#timeline .container ul li > div {
+width: 400px;
+position: relative;
+left: 36px;
+background-color: #333;
+color: white;
+padding:1rem;
+
+}
+
+#timeline .container ul li > div::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 5px;
+    border-style: solid;
+}
+
+#timeline .container ul li:nth-child(odd) > div::before {
+left: -16px;
+border-width: 8px 16px 8px 0;
+border-color: transparent orange transparent transparent;
+}
+
+#timeline .container ul li:nth-child(even) > div::before {
+    left: 400px;
+border-width: 8px 0 8px 16px;
+border-color: transparent transparent transparent orange;
+
+}
+
+
+@media (max-width:903px) {
+#timeline .container ul li > div {
+    width: 230px;
+}
+#timeline .container ul li:nth-child(even) div{
+    left: -251px;
+}
+#timeline .container ul li:nth-child(even) > div::before {
+    left: 230px;
+}
+}
+
+
+@media (max-width:550px) {
+
+#timeline .container ul li > div{
+        width: calc(100vh - 130px);
+}
+#timeline .container ul li:nth-child(even) div{
+    left: 36px;
+}
+#timeline .container ul li {
+    margin-left: 1rem;
+}
+#timeline .container ul li:nth-child(even) > div::before {
+    border-width: 8px 16px 8px 0;
+    border-color: transparent orange transparent transparent;
+    left: -16px;
+
+}
+
+}
 /* Section testmonials */
 
 #testimonials{
