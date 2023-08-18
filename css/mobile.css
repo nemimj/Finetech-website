@@ -122,7 +122,7 @@
     @media (max-width:550px) {
     
     #timeline .container ul li > div{
-            width: calc(100vh - 130px);
+            width: 250px;
     }
     #timeline .container ul li:nth-child(even) div{
         left: 36px;
